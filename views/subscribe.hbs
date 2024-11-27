@@ -7,6 +7,7 @@
   action="/subscribers/create"
   enctype="multipart/form-data"
 >
+  <input type="hidden" name="_csrf" value="{{csrfToken}}" />
   <div class="row">
     <input type="text" name="fname" placeholder="First Name" required />
     <input type="text" name="lname" placeholder="Last Name" required /></div>
@@ -22,7 +23,6 @@
     <input type="email" name="email" id="email" />
   </div>
   <div class="row">
-    <input type="hidden" name="_csrf" value="{{csrfToken}}" />
     <label for="birthday">
       Birthday
     </label>
@@ -45,12 +45,12 @@
       id="vehicle2"
       name="vehicle2"
       value="Car"
-    /><label for="vehicle2"> I have a car</label><input
+    /><label for="vehicle2"> I have a car!</label><input
       type="checkbox"
       id="vehicle3"
       name="vehicle3"
       value="Boat"
-    /><label for="vehicle3"> I have a boat</label>
+    /><label for="vehicle3"> I have a boat!</label>
   </div>
   <div class="row">
     <label for="avatar">
